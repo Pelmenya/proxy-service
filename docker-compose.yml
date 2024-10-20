@@ -3,5 +3,7 @@ services:
     build: .
     container_name: 3proxy
     ports:
-      - "1080:1080"
+      - "1051:1080"
     restart: unless-stopped
+    env_file:
+      - .env
